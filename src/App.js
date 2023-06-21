@@ -122,6 +122,7 @@ export const App = () => {
   //So for now we will just stick with loading in the inital data on mount.
   React.useEffect(() => {
     fetchTasks();
+    //not sure if I handed local storage correctly here, honestly
     localStorage.setItem('todoTasks', JSON.stringify(todos))
   },[])
 
